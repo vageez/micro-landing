@@ -7,7 +7,7 @@ module.exports = (_, argv) => ({
     publicPath:
       argv.mode === "development"
         ? "http://localhost:8091/"
-        : "https://awelanding.bellmedia.ca/", // Production
+        : "https://micro-landing-one.vercel.app/", // Production
   },
   resolve: {
     extensions: [".tsx", ".ts", ".jsx", ".js", ".json"],
@@ -49,8 +49,8 @@ module.exports = (_, argv) => ({
       name: "landing",
       filename: "remoteEntry.js",
       remotes: {
-        host: "host@http://localhost:8080/remoteEntry.js",
-        rotator: "rotator@http://localhost:8082/remoteEntry.js",
+        host: "host@https://micro-host-self.vercel.app/remoteEntry.js",
+        rotator: "rotator@https://micro-rotator.vercel.app/remoteEntry.js",
       },
       exposes: {
         "./Landing": "./src/components/Landing",
