@@ -6,7 +6,7 @@ import { useTheme } from "@mui/material/styles";
 const ButtonComponent = () => {
   const theme = useTheme();
   console.log("Landing Page Button theme", theme);
-  return <Button variant="contained">Hello World</Button>;
+  return <Button variant="contained">Hello World Langing</Button>;
 };
 export default () => {
   const setMicro = useAppStore((state) => state.setMicro);
