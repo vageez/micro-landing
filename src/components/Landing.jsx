@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { Rotator } from "rotator/Rotator";
 import useAppStore from "host/StateService";
+import Button from "@mui/material/Button";
 import { useTheme } from "@mui/material/styles";
 
 const ButtonComponent = () => {
